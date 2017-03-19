@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="60dp"
+        android:src="@drawable/label_admin_change_table" />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="테이블 수를 몇 개로 변경하시겠습니까?"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+    
+
+</LinearLayout>

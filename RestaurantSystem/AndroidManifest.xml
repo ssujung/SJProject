@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.se.teamproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.se.teamproject.presentation.StartMain"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.se.teamproject.client.ClientTest"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.se.teamproject.presentation.JoinClient"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.se.teamproject.presentation.JoinStaff"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.se.teamproject.presentation.JoinWhat"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.se.teamproject.presentation.Admin_Login"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.se.teamproject.presentation.Admin_Reserve"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.se.teamproject.presentation.Admin_RManagement"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.se.teamproject.presentation.Admin_ReserveNew"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.se.teamproject.presentation.Admin_ReserveChoiceMD"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.se.teamproject.presentation.Admin_ReserveModify"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.se.teamproject.presentation.Admin_ReserveCancel"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.se.teamproject.presentation.Admin_ArrivalHistory"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.se.teamproject.presentation.Admin_ChangeTableNum"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+    </application>
+
+</manifest>

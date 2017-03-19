@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Help" >
+
+    <ImageView
+        android:id="@+id/bearimg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@raw/bearimg"
+        android:scaleType="fitXY" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <ImageView 
+            android:id="@+id/pointup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:maxWidth="130dp"
+            android:maxHeight="130dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/pointup" />
+        <ImageView 
+            android:id="@+id/pointdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:maxWidth="130dp"
+            android:maxHeight="130dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/pointdown" />
+        <ImageView 
+            android:id="@+id/pointleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:maxWidth="130dp"
+            android:maxHeight="130dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/pointleft" />
+        <ImageView 
+            android:id="@+id/pointright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:maxWidth="130dp"
+            android:maxHeight="130dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/pointright" />
+        <ImageView 
+            android:id="@+id/tap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+        	android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:maxWidth="200dp"
+            android:maxHeight="200dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/fingertap" />
+        <ImageView 
+            android:id="@+id/press"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+        	android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:maxWidth="200dp"
+            android:maxHeight="200dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/fingerpress" />
+        <ImageView 
+            android:id="@+id/shaking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+        	android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:maxWidth="200dp"
+            android:maxHeight="200dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/shaking" />
+         <ImageView 
+            android:id="@+id/tostart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+        	android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:maxWidth="200dp"
+            android:maxHeight="200dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/tostart" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/back_btn" />
+
+    </LinearLayout>
+
+</RelativeLayout>

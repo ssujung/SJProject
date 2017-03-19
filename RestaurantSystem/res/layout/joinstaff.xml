@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:src="@drawable/label_join" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="30dp" >
+
+        <RadioButton
+            android:id="@+id/joinnormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radiobtn"
+            android:drawableRight="@drawable/label_normal_staff"
+            android:paddingLeft="20dp"
+            android:paddingRight="40dp" />
+
+        <RadioButton
+            android:id="@+id/joinmanager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radiobtn"
+            android:drawableRight="@drawable/label_manager"
+            android:paddingLeft="20dp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="30dp" >
+
+        <!-- 아이디 -->
+  
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:paddingBottom="30dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:src="@drawable/label_id" />
+
+            <EditText
+                android:id="@+id/joinstaffid"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:maxLength="20"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- 비밀번호 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:paddingBottom="30dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:src="@drawable/label_password" />
+
+            <EditText
+                android:id="@+id/joinstaffpwd"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_border"
+                android:inputType="textPassword"
+                android:maxLength="30"
+                android:paddingLeft="10dp"
+                android:singleLine="true" >
+            </EditText>
+
+        </LinearLayout>
+
+        <!-- 이름 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:paddingBottom="30dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:src="@drawable/label_name" />
+
+            <EditText
+                android:id="@+id/joinstaffname"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_border"
+                android:maxLength="20"
+                android:paddingLeft="10dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <!-- 이메일 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:paddingBottom="30dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:src="@drawable/label_email" />
+
+            <EditText
+                android:id="@+id/joinstaffemail"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_border"
+                android:maxLength="30"
+                android:paddingLeft="10dp"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!-- Buttons -->
+    
+    <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:paddingTop="30dp"
+            android:paddingBottom="20dp">
+            
+            <ImageButton
+                android:id="@+id/submitbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:maxHeight="500dp"
+                android:maxWidth="500dp"
+                android:background="#00000000"
+                android:src="@drawable/submit_btn" />
+
+            <ImageButton 
+                android:id="@+id/cancelbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:maxHeight="500dp"
+                android:maxWidth="500dp"
+                android:background="#00000000"
+                android:src="@drawable/cancel_btn"/>
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:src="@drawable/label_reserv_modify" />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="40dp" >
+
+        <!-- 이름 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:src="@drawable/label_name" />
+
+            <TextView 
+                android:id="@+id/modifynameview"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                 android:gravity="center|center_horizontal"
+                android:background="@drawable/edittext_border"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- 전화번호 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="13dp"
+                android:src="@drawable/label_phonenum" />
+            
+            <TextView 
+                android:id="@+id/modifyphoneview"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                 android:gravity="center|center_horizontal"
+                android:background="@drawable/edittext_border"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <!-- 자리(테이블번호) -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:src="@drawable/label_tablenum" />
+
+            <Spinner
+                android:id="@+id/modifytablenum"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp" />
+        </LinearLayout>
+
+        <!-- 시간 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:src="@drawable/label_time" />
+
+            <EditText
+                android:id="@+id/modifyhour"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_border"
+                android:focusable="true"
+                android:gravity="center"
+                android:maxLength="2"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  :  "
+                android:textSize="23dp" />
+
+            <EditText
+                android:id="@+id/modifymin"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:focusable="true"
+                android:gravity="center"
+                android:maxLength="2"
+                android:singleLine="true" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- 인원 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:src="@drawable/label_dinner_count" />
+
+            <Spinner
+                android:id="@+id/modifycount"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Buttons -->
+    
+    <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="20dp">
+            
+            <ImageButton
+                android:id="@+id/submitbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp"
+                android:maxHeight="500dp"
+                android:maxWidth="500dp"
+                android:background="#00000000"
+                android:src="@drawable/submit_btn" />
+
+            <ImageButton 
+                android:id="@+id/cancelbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:maxHeight="500dp"
+                android:maxWidth="500dp"
+                android:background="#00000000"
+                android:src="@drawable/cancel_btn"/>
+        </LinearLayout>
+
+</LinearLayout>

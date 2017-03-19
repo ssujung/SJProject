@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="90dp"
+        android:src="@drawable/label_admin_walkin" />
+
+    <LinearLayout
+        android:layout_width="714dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="120dp" >
+
+        <!-- 테이블 번호 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="40dp" >
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.18"
+                android:paddingRight="40dp"
+                android:src="@drawable/label_tablenum" />
+
+            <Spinner
+                android:id="@+id/tablenum"
+                android:layout_width="355dp"
+                android:layout_height="50dp"
+                android:entries="@array/level"
+                android:background="#ffffff"
+                android:paddingLeft="140dp" />
+        </LinearLayout>
+
+        <!-- 식사인원 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="40dp" >
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.18"
+                android:paddingRight="40dp"
+                android:src="@drawable/label_dinner_count" />
+
+            <Spinner
+                android:id="@+id/dinnercount"
+                android:layout_width="355dp"
+                android:layout_height="50dp"
+                android:entries="@array/level"
+                android:background="#ffffff"
+                android:paddingLeft="140dp"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <!-- 식사 시작시간 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="40dp" >
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.18"
+                android:paddingRight="40dp"
+                android:src="@drawable/label_dinner_start_time" />
+
+            <EditText
+                android:id="@+id/dinnerstarttime"
+                android:layout_width="355dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_border"
+                android:maxLength="20"
+                android:paddingLeft="30dp"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Buttons -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="100dp"
+        android:paddingTop="100dp" >
+
+        <ImageButton
+            android:id="@+id/submitbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:maxHeight="500dp"
+            android:maxWidth="500dp"
+            android:paddingRight="30dp"
+            android:src="@drawable/submit_btn" />
+
+        <ImageButton
+            android:id="@+id/cancelbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:maxHeight="500dp"
+            android:maxWidth="500dp"
+            android:paddingLeft="30dp"
+            android:src="@drawable/cancel_btn" />
+    </LinearLayout>
+
+</LinearLayout>
